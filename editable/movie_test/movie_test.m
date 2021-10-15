@@ -3,7 +3,7 @@ function movie_test(par_num, run_num)
 
 %Parameters
 screen_number = max(Screen('Screens'));
-screen_rect = [0 0 500 500];
+screen_rect = [0 0 500 500]; 
 screen_colour_background = [0 0 0];
 screen_colour_text = [255 255 255];
 screen_font_size = 30;
@@ -94,7 +94,7 @@ for trial = 1: d.number_trials
     fprintf('\nTrial %d and Question %d\n', trial, question_number);  
     
     if d.condition_number == 3
-        movie_filepath = sprintf('%s%d_question.mp4', p.DIR_VIDEOSTIMS_HUMAN, question_number);
+        movie_filepath = sprintf('%s%d_question.mp4', p.DIR_VIDEOSTIMS_HUMAN, question_number); 
     elseif d.condition_number == 4
         movie_filepath = sprintf('%s%d_question.mp4', p.DIR_VIDEOSTIMS_MEMOJI, question_number);
     end
